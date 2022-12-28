@@ -1,0 +1,61 @@
+.container {
+  margin-top: 100px;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.table {
+  border-collapse: collapse;
+  margin: auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.557);
+}
+
+.table thead tr {
+  background-color: #b9d6f2;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.table tr {
+  padding: 100px;
+}
+
+.addcontact-btn {
+  margin-bottom: 20px;
+  font-size: large;
+  background-color: crimson;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: grab;
+}
+
+.btn {
+  border: none;
+  margin: 0 5px;
+  font-size: 1.1rem;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+.btn-edit {
+  background-color: rgb(47, 135, 236);
+  color: white;
+}
+
+.btn-delete {
+  background-color: rgba(255, 0, 0, 0.501);
+  color: white;
+}
+
+.btn-view {
+}
