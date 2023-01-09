@@ -20,7 +20,7 @@ const AddContactPage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/api/get/${_id}`)
+      .get(`https://my-contacts-list-sp.netlify.app/api/get/${_id}`)
       .then((res) => setNewContact({ ...res.data[0] }));
   }, [_id]);
 
@@ -30,7 +30,7 @@ const AddContactPage = () => {
       toast.error("Please enter all fields");
     } else {
       axios
-        .post("http://localhost:8080/api/post", {
+        .post("https://my-contacts-list-sp.netlify.app/api/post", {
           name,
           email,
           phone,

@@ -8,7 +8,9 @@ function Home() {
   const [data, setData] = useState([]);
 
   const loadData = async () => {
-    const res = await axios.get("http://localhost:8080/api/get");
+    const res = await axios.get(
+      "https://my-contacts-list-sp.netlify.app/api/get"
+    );
     setData(res.data);
   };
 
@@ -18,20 +20,20 @@ function Home() {
 
   const deleteContact = (id) => {
     if (window.confirm("Are you sure you want to delete contact?")) {
-      axios.delete(`http://localhost:8080/api/remove/${id}`);
+      axios.delete(`https://my-contacts-list-sp.netlify.app/api/remove/${id}`);
       toast.success("Contact Deleted Successfully!");
       setTimeout(() => loadData(), 500);
     }
   };
 
   const updateContact = (id) => {
-    axios.put(`http://localhost:8080/api/update/${id}`);
+    axios.put(`https://my-contacts-list-sp.netlify.app/api/update/${id}`);
     toast.success("Contact Updated Successfully!");
     setTimeout(() => loadData(), 500);
   };
 
   const viewContact = (id) => {
-    axios.get(`http://localhost:8080/api/get/${id}`);
+    axios.get(`https://my-contacts-list-sp.netlify.app/api/get/${id}`);
   };
 
   return (

@@ -9,7 +9,7 @@ const ViewPage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/api/get/${_id}`)
+      .get(`https://my-contacts-list-sp.netlify.app/api/get/${_id}`)
       .then((res) => setData({ ...res.data[0] }));
   }, [_id]);
 
