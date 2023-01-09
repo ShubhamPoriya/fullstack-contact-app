@@ -52,7 +52,7 @@ function Home() {
         <tbody>
           {data.map((item, key) => {
             return (
-              <tr>
+              <tr key={key}>
                 <th scope="row">{key + 1}</th>
                 <td>{item.name}</td>
                 <td>{item.email}</td>
