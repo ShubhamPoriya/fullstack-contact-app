@@ -12,7 +12,7 @@ import ViewPage from "./pages/ViewPage";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
     errorElement: <ErrorPage />,
   },
   {
